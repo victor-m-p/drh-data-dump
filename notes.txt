@@ -1,0 +1,31 @@
+# Decisions overall: 
+"Polity" not included currently. 
+
+# Decisions specifics:
+## questionrelation: 
+* Map to another number currently. 
+* (notes): 417 question_id are not in questionrelations (but in answerset). 
+--> Some of this is definitely a mistake. 
+--> Especially the text poll has problems. 
+
+## regions: 
+--> using the n=10 world regions from Rachel
+--> based on overlap with countries
+--> n=4 cases lacking geom object.
+--> using regions that are not "completed" (n=27 cases in our data) 
+
+## answerset: 
+--> seems to be true that if there is "history_parent_id" then answer is outdated (filter out directly)
+--> how about inferring a no if parent is no? (leave to user?)
+
+## other problems:
+--> why is branching question such a mess?
+--> should this not just have 7 possible values?
+
+Notes for myself:
+Editor does in fact not have to be unique to an entry. 
+There can be more than 1 so it should be in the answerset. 
+
+need to migrate "data source" to entries....
+
+
