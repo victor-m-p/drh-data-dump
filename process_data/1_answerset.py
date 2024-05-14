@@ -49,4 +49,7 @@ answerset["branching_question"] = answerset["branching_question"].map(
     branching_question_mapping
 )
 
+# rename columns
+answerset = answerset.rename(columns={"value": "answer_value"})
+
 answerset.to_csv("../data_clean/answerset.csv", index=False)

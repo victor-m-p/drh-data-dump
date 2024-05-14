@@ -3,7 +3,6 @@ import pandas as pd
 
 entity_tags = pd.read_csv("../data_clean/entity_tags.csv")
 
-# christian traditions
 # christian tags
 christian_tags = [
     18,  # Christian Traditions
