@@ -14,8 +14,8 @@ Name/Property | Datatype | Description
  --- | --- | --- 
 `question_id` | `int` | 
 `question_name` | `string` | 
-`parent_question_id` | `float` | 
-`parent_question` | `string` | missing if question has no parent
+`parent_question_id` | `float` | missing if `question_id` has no parent
+`parent_question` | `string` | missing if `question_id` has no parent
 `entry_id` | `int` | 
 `answer` | `string` | 
 `answer_value` | `int` | `1` = `Yes`, `0` = `No`, `-1` = (`I don't know`) or (`Field doesn't know`)
@@ -72,7 +72,7 @@ Name/Property | Datatype | Description
 `region_description` | `string` | 
 `gis_region` | `string` | MULTIPOLYGON 
 `completed` | `bool` | `gis_region` completed (True/False)
-`world_region` | `string` | 10 world regions
+`world_region` | `string` | 10 world regions (link: xxx)
 
 ## <a name="table-entity_tagscsv"></a>Table [entity_tags.csv](./entity_tags.csv)
 
@@ -86,10 +86,10 @@ Name/Property | Datatype | Description
 `entry_id` | `int` | 
 `entrytag_id` | `int` | 
 `entrytag_name` | `string` | 
-`entrytag_level` | `int` | tag level in hierarchy 
-`entrytag_path` | `string` | entrytag_name[entrytag_id]->entrytag_name[entrytag_id]
+`entrytag_level` | `int` | `entrytag_id` level in hierarchy
+`entrytag_path` | `string` | `entrytag_name`[`entrytag_id`]->`entrytag_name`[`entrytag_id`]
 `approved` | `bool` | True/False
-`parent_entrytag_id` | `float` | missing if entrytag has no parent
+`parent_entrytag_id` | `float` | Missing if `entrytag_id` has no parent
 
 ## <a name="table-questionrelationcsv"></a>Table [questionrelation.csv](./questionrelation.csv)
 
