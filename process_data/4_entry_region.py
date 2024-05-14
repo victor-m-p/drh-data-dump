@@ -89,7 +89,6 @@ unique_world_region_metadata = unique_world_region_metadata[
         "world_region",
     ]
 ]
-unique_world_region_metadata.dtypes
 
 # save data
 unique_world_region_metadata.to_csv("../data_clean/region_data.csv", index=False)
