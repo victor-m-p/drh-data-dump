@@ -18,13 +18,13 @@ Name/Property | Datatype | Description
 `parent_question` | `string` | missing if question has no parent
 `entry_id` | `int` | 
 `answer` | `string` | 
-`answer_value` | `int` | 1=yes, 0=no, -1=I don't know / Field doesn't know
+`answer_value` | `int` | `1` = `Yes`, `0` = `No`, `-1` = (`I don't know`) or (`Field doesn't know`)
 `parent_answer` | `string` | 
-`parent_answer_value` | `int` | 1=yes, 0=no, -1=I don't know / Field doesn't know
+`parent_answer_value` | `int` | `1` = `Yes`, `0` = `No`, `-1` = (`I don't know`) or (`Field doesn't know`)
 `notes` | `string` | 
 `year_from` | `int` | 
 `year_to` | `int` | 
-`branching_question` | `string` | Non-elite, Elite, Religious Specialists
+`branching_question` | `string` | `Non-elite (common populace)`, `Elite`, `Religious Specialists`
 `region_id` | `int` | 
 `expert_id` | `int` | 
 `expert_name` | `string` | 
